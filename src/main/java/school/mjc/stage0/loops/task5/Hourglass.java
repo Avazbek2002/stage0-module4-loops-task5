@@ -1,8 +1,10 @@
 package school.mjc.stage0.loops.task5;
 
 public class Hourglass {
-    public void printHourglassOfGivenSize(int height) {
+    public static void printHourglassOfGivenSize(int height) {
         for (int i = 0; i <= height/2; i++) {
+            if (height == 2*i)
+                continue;
             for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
